@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festerowy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Festerowy</h1>
+    </header>
+    <main>
+        <section class="crypto-addresses">
+            <h2>My Cryptocurrency Addresses</h2>
+            <ul>
+                <li>
+                    Bitcoin: <code id="btc">bc1qmmqxaej7cghyn2spgcgp5p5a3h0z3tj8w9smgw</code>
+                    <button onclick="copyToClipboard('btc')">Copy</button>
+                </li>
+                <li>
+                    Ethereum: <code id="eth">0x4372d43859167D7c93A9718726872837849b2124</code>
+                    <button onclick="copyToClipboard('eth')">Copy</button>
+                </li>
+                <li>
+                    Litecoin: <code id="ltc">35Wk78bSH2kKdbiy1osu6oVPyQtoRmKECPpSBkrDqVDo</code>
+                    <button onclick="copyToClipboard('ltc')">Copy</button>
+                </li>
+                <li>
+                    Dogecoin: <code id="doge">DBakRzBCS7a3AVYBrKNVxJ4pBdFF9aNJi8</code>
+                    <button onclick="copyToClipboard('doge')">Copy</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Festerowy. All rights reserved.</p>
+    </footer>
+    <div id="popup" class="popup">Copied successfully!</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
